@@ -103,6 +103,7 @@ class Controller {
   }
 
   static editProduct(req, res) {
+    const errors = req.query.errors;
     const id = req.params.productId;
     const username = req.session.username;
     let product;
@@ -112,10 +113,17 @@ class Controller {
         return Category.findAll();
       })
       .then((categories) => {
-        res.render("./product/editProduct", { product, categories, username });
+        res.render("./product/editProduct", { product, categories, username, errors });
       })
       .catch((err) => {
-        res.send(err);
+        if (err.name === "SequelizeValidationError") {
+          let errors = err.errors.map((el) => {
+            return el.message;
+          });
+          res.redirect(`/products/add?errors=${errors}`);
+        } else {
+          res.send(err);
+        }
       });
   }
 
@@ -130,7 +138,14 @@ class Controller {
         res.redirect(`/products/detail/${id}`);
       })
       .catch((err) => {
-        res.send(err);
+        if (err.name === "SequelizeValidationError") {
+          let errors = err.errors.map((el) => {
+            return el.message;
+          });
+          res.redirect(`/products/edit/${id}?errors=${errors}`);
+        } else {
+          res.send(err);
+        }
       });
   }
 

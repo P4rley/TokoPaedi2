@@ -17,8 +17,13 @@
     <%- include(`../partials/_navbar`) %>
     <div style="width: 50%; margin: 50px auto">
       <button><a href="/products/detail/<%= product.id %>">Cancel</a></button>
-      <h1>Add your product</h1>
-
+      <h1>Edit <%= product.name %></h1>
+      <% if (errors) { %>
+        <p style="color: red">
+          <% errors.split(',').forEach((el, i)=>{ %> <%= i+1 %>. <%=el %> <br />
+                <% }) %>
+        </p>
+        <% } %>
       <form action="/products/edit/<%= product.id %>" method="post">
         <div class="mb-3">
           <label for="name" class="form-label">Product Name</label>
@@ -38,10 +43,7 @@
             id="description"
             rows="3"
             placeholder="Jelaskan tentang produkmu"
-            name="description"
-          >
-<%= product.description%></textarea
-          >
+            name="description"><%= product.description%></textarea>
         </div>
         <div class="mb-3">
           <label for="img" class="form-label">Image Product</label>
