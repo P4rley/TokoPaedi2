@@ -11,6 +11,14 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       Profile.belongsTo(models.User, { foreignKey: "UserId" });
     }
+
+    get formattedBirthDate() {
+      if (this.birthDate !== null) {
+        return this.birthDate.toLocaleDateString("en-CA");
+      } else {
+        return this.birthDate;
+      }
+    }
   }
   Profile.init(
     {

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Page</title>
+
+    <style>
+      .span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ini halaman user</h1>
+
+    <% if (user.Profile === null) { %>
+    <p>Data profil kamu belum lengkap silahkan lengkapi data kamu</p>
+    <a href="/users/profile/add">Edit Profile</a>
+    <% } else { %>
+    <a href="/users/profile/edit">Edit Profile</a>
+    <% } %>
+
+    <img src="<%= user.Profile?.imageUrl %>" alt="" />
+
+    <div>
+      <p><span class="span">Nama</span>: <%= user.Profile?.fullName %></p>
+      <p><span class="span">Email</span>: <%= user.email %></p>
+      <p>
+        <span class="span">Nomor Handphone: </span><%= user.Profile?.phone %>
+      </p>
+      <p><span class="span">age</span>: <%= user.Profile?.age %></p>
+      <p><span class="span">gender</span>: <%= user.Profile?.gender %></p>
+      <p>
+        <span class="span">Birth Date</span>: <%=
+        user.Profile?.formattedBirthDate %>
+      </p>
+    </div>
+  </body>
+</html>
