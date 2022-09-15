@@ -32,12 +32,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      modelName: "Profile",
-      hooks: {
-        beforeUpdate(Profile, {where: {UserId}}) {
-          Profile.age = 0
-        }
-      }
+      modelName: "Profile"
     }
   );
   return Profile;
