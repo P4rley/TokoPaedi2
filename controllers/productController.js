@@ -154,7 +154,7 @@ class Controller {
     const username = req.session.productId
     Product.decrement({ stock: 1 }, { where: { id } })
       .then(() => {
-        const url = `https://www.youtube.com/watch?v=sBe9G20R2TQ&t=228s`
+        const url = `https://www.youtube.com/watch?v=g_je71YGxx8`
         qr.toDataURL(url, (err, src) => {
           if (err) {
             res.send(err)

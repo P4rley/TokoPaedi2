@@ -67,7 +67,8 @@
   </head>
   <body>
     <%- include(`partials/_navbar`) %>
-    <h1>Ini halaman user</h1>
+    <div style="margin-left: 80px;">
+    <h1>Profil <%= user.Profile?.fullName  %> </h1>
 
     <% if (user.Profile === null) { %>
     <p>Data profil kamu belum lengkap silahkan lengkapi data kamu</p>
@@ -78,7 +79,6 @@
 
     <img src="<%= user.Profile?.imageUrl %>" alt="" />
 
-    <div>
       <p><span class="span">Nama</span>: <%= user.Profile?.fullName %></p>
       <p><span class="span">Email</span>: <%= user.email %></p>
       <p>

@@ -124,7 +124,6 @@ class AuthController {
   static editUserProfile(req, res) {
     const username = req.session.username;
     const userId = req.session.userId;
-    console.log(userId);
     Profile.findOne({ where: { UserId: +userId } })
       .then((profile) => {
         res.render("editUserProfile", { profile, username });
