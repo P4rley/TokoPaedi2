@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Product</title>
+    <style>
+        h3 {
+            display: flex;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 50%; margin: 0 auto; margin-top:50px;">
+        <button><a href="/">Back</a></button>
+        <br><br>
+        <button><a href="/products/edit/<%= product.id %>">Edit</a></button>
+        <button><a href="/products/delete/<%= product.id %>">Delete</a></button>
+        <% if (buy) { %>
+            <br><br><br>
+         <h3 style="background-color:yellowgreen; display: inline;">Kamu berhasil membeli <%= product.name %> seharga <%= product.formattedPrice() %>, pengiriman maksimal 7 hari kerja </h3>
+        <% } %>
+        <div style="border: 1px solid black; margin-top: 30px; padding: 20px;">
+            <div class="box">
+                <div class="left">
+                    <h1>
+                        <%= product.name %>
+                    </h1>
+                    <h3>Description:</h3>
+                    <p style="background-color: lightblue;">
+                        <%= product.description %>
+                    </p>
+                    <h3>Stock: <%= product.stock %>
+                    </h3>
+                    <h3>Price: <%= product.formattedPrice() %>
+                    </h3>
+                    <h3>Seller: <%= product.User.username %>
+                    </h3>
+                    <h3>Category: <%= product.Category.name %>
+                    </h3>
+                    <button><a href="/products/buy/<%= product.id %>">BUY</a></button>
+                </div>
+                <div class="right">
+                    <img src="<%= product.imageUrl %>" style="width: 400px;" alt="<%= product.name %>">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
