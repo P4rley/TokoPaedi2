@@ -9,10 +9,6 @@ router.get("/login", AuthController.login);
 router.post("/login", AuthController.postLogin);
 router.get("/logout", AuthController.logout);
 router.get("/products/detail/:productId", Controller.detailProduct);
-router.get("/products/buy/:productId", Controller.buyProduct);
-
-router.use(AuthController.userPage);
-
 router.get("/users", AuthController.users);
 router.get("/users/profile/add", AuthController.addUserProfile);
 router.post("/users/profile/add", AuthController.createUserProfile);

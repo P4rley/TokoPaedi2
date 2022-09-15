@@ -120,10 +120,11 @@ class Controller {
   }
 
   static saveProduct(req, res) {
-    const { name, description, price, CategoryId, imageUrl } = req.body;
+    console.log(req.body);
+    const { name, description, price, CategoryId, stock, imageUrl } = req.body;
     const id = req.params.productId;
     Product.update(
-      { name, description, price, CategoryId, imageUrl },
+      { name, description, price, CategoryId, stock, imageUrl },
       { where: { id } }
     )
       .then(() => {
