@@ -1,0 +1,92 @@
+[
+  {
+    "UserId": 3,
+    "CategoryId": 2,
+    "name": "OXYGEN",
+    "description": "Toxic effect of arsenic and its compounds, assault, subs",
+    "stock": 19,
+    "price": 161619,
+    "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAITSURBVBgZpcHLThNhGIDh9/vn7/RApwc5VCmFWBPi1mvwAlx7BW69Afeu3bozcSE7E02ILjCRhRrds8AEbKVS2gIdSjvTmf+TYqLu+zyiqszDMCf75PnnnVwhuNcLpwsXk8Q4BYeSOsWpkqrinJI6JXVK6lSRdDq9PO+19vb37XK13Hj0YLMUTVVyWY//Cf8IVwQEGEeJN47S1YdPo4npDpNmnDh5udOh1YsZRcph39EaONpnjs65oxsqvZEyTaHdj3n2psPpKDLBcuOOGUWpZDOG+q0S7751ObuYUisJGQ98T/Ct4Fuo5IX+MGZr95jKjRKLlSxXxFxOEmaaN4us1Upsf+1yGk5ZKhp8C74H5ZwwCGO2drssLZZo1ouIcs2MJikz1oPmapHlaoFXH1oMwphyTghyQj+MefG+RblcoLlaJG/5y4zGCTMikEwTctaxXq/w9kuXdm9Cuzfh9acujXqFwE8xmuBb/hCwl1GKAnGccDwIadQCfD9DZ5Dj494QA2w2qtQW84wmMZ1eyFI1QBVQwV5GiaZOpdsPaSwH5HMZULi9UmB9pYAAouBQbMHHrgQcnQwZV/KgTu1o8PMgipONu2t5KeaNiEkxgAiICDMCCFeEK5aNauAOfoXx8KR9ZOOLk8P7j7er2WBhwWY9sdbDeIJnwBjBWBBAhGsCmiZxPD4/7Z98b/0QVWUehjkZ5vQb/Un5e/DIsVsAAAAASUVORK5CYII="
+  },
+  {
+    "UserId": 3,
+    "CategoryId": 3,
+    "name": "Ibuprofen",
+    "description": "Salter-Harris Type III physeal fracture of l calcaneus, init",
+    "stock": 4,
+    "price": 99694,
+    "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHoSURBVDjLpVM9awJBEB2DKIoocoI2goXVgVhoYam9bep0XqX+DU1pZ6EhpZ2FYGsnot2BqJUgaiGCd/j9tZlZvc2ZjyZZGPZmb+bNe49dC2MM/rOsXw9Go1EcQdMYSYwIDbheryruLdwb0Wi0Z663mBlgs4J5TpIk2el0gt1u5+f7/R7W6zXMZrM+gpRisVhZNBEAxXA4VAaDgYbFjBbtuq4zTdPYbrfjZ5vNhnU6Ha3dbitGH2dwp/0eCoVkmrparQSweYjP54PtdgvdbpeYvKRSqd4TFWCSJtpGc6FQgEqlKpqLxVeoVt8AGQFJCwaDMrJJCxPJMPpBWhEMboPZ/ZvxbwMMG8Hr9VJtks4MBhGafjgcHigbAIRhnBGAy+WC8/kcEQBmrdR0+3402VxzPB7hdDqBmYFK5thstjsAExI+81szSV0ulwSgCoDL5dIigxwOBy+SJN+DBHLfYEE10+mUJLSEiai9MR6Pn1Gb7Pf7QVEy4p7QBcpkbrnb7Yb5fA6qqvYxbQgGiUSih66W8JLoRM/j8YDVauWm0k5BzXgTodls6uhBCUF7365yvV5XUFsuHA7LgUCAA6E8WCwWMJlM+GTMS/l8vvzjW6BVq9XiSDuNQPwxoVZuMkYLmTSy2ezvj+kv6wM24KX3CYk6PAAAAABJRU5ErkJggg=="
+  },
+  {
+    "UserId": 1,
+    "CategoryId": 2,
+    "name": "acyclovir",
+    "description": "Brawny scleritis, left eye",
+    "stock": 8,
+    "price": 124624,
+    "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALsSURBVDjLjdBbTJJhGAdw6qKLuuiqi04XZoeLsnXQOecFfWGu8ECQJs08UCADLMQvUVI0UcksQj4NzM1DU6RUEFtj1eZMR02nkOWxNeUiFdfWTM1sKv2Lb+u0WvPivz173vf5bc/DAMD4X/LitgkGTXvmJs3bMVEfsFIn31UTG7prw4/3/w7L2TtYnoYA31TTVvyeu7LA8jUBNSlbqClbMKYfi/C5R4dpazimLDsxZAqcXRNgjNus8w48xtxzI1YG7mHhhRGTLx3oLDrsWRPAY59NG2nM/Dr/qhW+URsWh+zwPqOgST5m/SeQRuwR3BEcn6OSCBhTWSuShKB+Klu27LWSeNdeCO9DNZxV6Tgo2u8IyTqw6Q8gJXw3644gwleeSOD31OrlqLhbjBuVahTcykL7cCNKOjUIyt9Xf4jcu/EnoE844qyWnIbt2kWMNOXBTMaDSmKhShyBuoE8mNzZuO1SoNSViZaxGmTYLyFMEmL8CVQmBLa87bT8dTDLVQJ6dw5uuLJQ1JeB3D4pVL1SCIypmDDG/n2w930WPDXrcausFLW1tchXZ+PmUyVuPlei4Hou3SsuLYIgXwCPKeoXsP6oQUVlpy9XqJJhMBgwMzOD8fFxdHV1Qa3Ng1JLYmRsmO45nU76z+UUziN6eF34fSGPdC1U2p/hilIJ9+AgUiWXEB0dA5FIBIqioFKp6DoqKmqVz+c7/AhJkh8ZAeyq+Hj5o8WHoz7w1eUoLNbSwFn7FxyLOImOjg643W50d3fDarWCyWQucDicjX5Ao9EsMV4XB6/2t1aAbPOCXfAAaekZNHBGXAiCdQKRkZHgcrl0/DVBEMs8Hu+JHxCLxbMMj4E53VqiwLn8HpxvGMfpZAnK9JUwt9hhs9lgMpmgUCiQk5ND1/5ec3PzB51ONxsTEzPKeNMgDnNoeFdD4xvtwfJeEJkOnOIm4oJIAqnsMqTS9K+kMKmtOpevlclk89+zJBQKP7HZbM/3dQ59A+o8mPeL9bcZAAAAAElFTkSuQmCC"
+  },
+  {
+    "UserId": 4,
+    "CategoryId": 3,
+    "name": "Titanium Dioxide and Zinc Oxide",
+    "description": "Unsp inj extensor musc/fasc/tend l thm at wrs/hnd lv, init",
+    "stock": 26,
+    "price": 187178,
+    "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFmSURBVBgZBcHPa85xAAfw1/Psy9bEFE+MgwyzrLS4KqUQRauVODohB/+As7OzGilZrpQki4OLgyiEImFWmqb5sfZ4vt/P2+vVitn+nMyZMpZdKeV1PpTpMjvZALQe7clMZ+9mawyKJb99sfA0p6e+AR4+/pySJEmSJOnlRe7cjIhoZ3wTAICtyjGAqojvBvRbJZYt+maHAqAqovLTiqj90lWJAqCK6DOgUumpBTPqDkBVRK2n1tJ477tRI+LKoe71pQdXz7eLaNRqjcaCA2LEqLHZY9uac8cHqyJ6ehp9Gpux5LEB+zSGbtxfbhdFrdaIuzYa9spFnYW3y1tMnL2QdmNRRz/4a1HXBvN60vttzry+qTdfJ9urh3WsM+GHrvWe5V/G1zXuTy8cbsWt7eVymWoPDaq9c9Anu634aMS0uaoVwLW19c66PL/05+zQif33fnh5unt7+dGToyIiIiIiTuVIIiL+A271xrBxnHZ+AAAAAElFTkSuQmCC"
+  },
+  {
+    "UserId": 1,
+    "CategoryId": 2,
+    "name": "levothyroxine sodium",
+    "description": "Other sickle-cell disorders without crisis",
+    "stock": 15,
+    "price": 81500,
+    "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIISURBVDjLlZPRT1JxFMf5E+6fwL9Ri8lsI5cSV7swL82w0SZTB6zWXOuB0cLU8HKhuAooTNrFupcAsYWjh1sRIaDgTLGXxmubD2w+9Prth29tXMWH83J+Z5/vOd9zfhoAml7h+mg3ReuhUxIdR37CrVanUXvgvvsOtk4kbJ+kEaos/bkSYCZv0wcri7/zrTS2f32AUOX+2nPWACvd1V4KmM7fnxQP1pE+2kSuJUM+EpFpvUOS5MJVHgQSuBCwWuU72eP3EA8TWCx523NFl+Iv+zrxRgRr+wKeFJ1NVYA9y+o3mjFskbkj9SDGpTGqm2dSJmosZfRYZXPClLxNqQJsGYt2bS+MbEtCF2SVmQCTukOPikaqbxPnik4l3ohC+ilivbGKcC0Af/klXAVHczhuoC8FmDdpyl2YUrjyAlmfHytklATpJronwP9jAYbYIN3XHXTDuDGkJ6qeRzsz7XCNh1AjvshmRRXQnZWVmIQxOfTf5RFV/fw3LyJkC+6d2U5PwOjbEe3Tz4/bQp0/b92WY5VbsZtuQ3SQfpC71+R3/eAqr2ASR7I9AUSVepibUHhSFCVKQv31uXm+0nPwVQ5dgOfLM+jeXNdf6AFRnZz9NNVeKs8jtr+CCDHvRcmL8bSlqQtdo/v+TBaZ+RrcXUaQqLMZy+GVf+OAcGPaWXCckW7OBgTdslrdPxtwvK6n/CCRAAAAAElFTkSuQmCC"
+  },
+  {
+    "UserId": 1,
+    "CategoryId": 3,
+    "name": "doxazosin mesylate",
+    "description": "Toxic effect of venom of scorpion, undetermined, init encntr",
+    "stock": 23,
+    "price": 313078,
+    "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAKnSURBVDjLdVJNSFRRFP7e+H7MZ06TyjCSDpZCaS93BpX9EUEEhUJkBS0KJDBoES6ibRujIqJcBUW0Khft2qQZtWigEYLBUgxz0BnHqWbUeTPv/3Xue/5k2eXdex73nO873zn3cK7r4tS1J61kX7pADi72uXTQNdjhG3d1O7YJU1+Yevfs5nZygYcf0EOBO5WWBm4+u+CBfQDgkzmgD/kFFSWdSFy+EcvLJwAOKi313JE99WiIKB6YoR0GZNbxs9duqUBFOY/9p69gHQF5Q0prFK8/TSKXK1I2x7t2VlQwSyT5xSI03cCfa7kEcLzIo3l3FE3hrbBteLJZZtumTYQW/Zc0Ey8GRzYiYIEOpucXIQYEaJpGjTI8ELu3UAZeEFEjS56qfwmYXBZIHdZ1HZ3tTb58X52X4OnbrzDLBfyFX1NgEoFtWkQSwPORMejePymwmAIOgijCsPymbkhgkdMwTRjUPzcggRMEIEAvwLFekM/maP+XADAtG5ZmoVgsQZ0ZQ9DIoDFcg2/JNNTqNkCSsTT1Eef2hjEdaUVvb29fIpEYWFNA7EZJQ3J0CG11m3D2wkWoqoodMzMYeh+D5pbh/JkuiAKPdDqNeDx+O5lM1q4rIZccR7O8hI6jJ9F36z5+fU+gLhKBoige6N7dO0il0oBYiRvXr4IIeviVgTGoBHU+iSqaRrbKW06g+CWO7u5uhEIhFAoFZLNZPHg4gB8F2YsJBoPSag/YwHC8jFQ64znzo6+8B+7v74cs+wBWUoADtm22NJZjdnZWWy0BgQDaDx/D5IdBDL8ZRtfxA5D4DmQyGUxMTECSJESjUYTDYRRLGheLxfKpVGqOY+BDlx49JnOZjS+MPCoLn1EXriaQSBMAjOeqYLkidoV+kgLXMXStROAsKer8DdsBr2sFe8jtAAAAAElFTkSuQmCC"
+  },
+  {
+    "UserId": 3,
+    "CategoryId": 1,
+    "name": "PROPOFOL",
+    "description": "Burn first deg of unsp site right lower limb, except ank/ft",
+    "stock": 10,
+    "price": 248535,
+    "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHrSURBVDjLjZOxaxNhGIcTtRkUJ/8AB9FBHBT8U3ToLAouxkUQLEIVnRxcKiithIjBBsSgRLgMGlNjvSOh4XJ4XLhwIRwpd+a4L1xMjEMfhy+aS6W2w2/4Pngefry8bwJI7EoSOAykaHdOTt+JvTL/UY+SNAYXML1POO4OnS5YLTCtMYb5FcO8j26cR7MX0OyFeYE2OkQjuESrBWEI4wmMxjAcgRiAH4Bu7GBaUDcFm5YzL9gcnaHdAUUBVQXPk4JoCCKSklDI+AG8Lv2YF5QbJepbEgiFBIYjGMTgQEAQQj+A/BtmAk2k0JoTKhtQrYJtQxTJhH/gEPpT2O9DLh8TbHQu0zRkZSHAdiQsdsF+AF4fPB9e5GKCiv6ZwluoVOTUe9sSjlf2+xJ2t8GyYTUTE+i2J4EQnA7UahKIV/Z8KS8W4eG6zlJGnQm+OB+wTDl5MeCvLF65aUC2AFfyadL5s9wpnJ4JitYpsrW7vKyqFNTvKLUh7rRy14V3H2EpMyG9tsj1anKvTUwCR2gExylZy1jfwO1BuQy3159xtXh0/1WGBO+7F6lqv3B70NDhwast0qVzB7sFxTmGYj3HNOWkH61G3MovHvyYFP0EiuZgt+Hx05/cyC7/D/5XkLNSrKg3ufcErq2t7AcDid88lUyCVhHVfwAAAABJRU5ErkJggg=="
+  },
+  {
+    "UserId": 3,
+    "CategoryId": 2,
+    "name": "Avobenzone, Octisalate and Octocrylene",
+    "description": "Oth fx second lum vertebra, subs for fx w routn heal",
+    "stock": 27,
+    "price": 293517,
+    "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAI2SURBVDjLpVNNaBNBFP42aZNqXEw1iv0xFUpBLWmrF0v1IpKiKOohBwUvhYDgz0G8eIugYBBFD+JBpV49ekqpHoQklGBpzNb0UIwkoFarIvnT5m9mfDPJhlJTEVx4vN3Z9/28eTOaEAL/87StXYjH409rtdq5arXaRhmUVVQqFZmf+Xy+sy0JDMPYTIAnTqfTZ7dvRJlA4BzKH7ns7HRienrqDH39SZBIJI5KsMvl6nE4HEhnPkGqcy7ABSciAUZk5XK5dQtUPOV2u9XCykoJVQK/NeaIgDfDO35MtdGSQPZos9mQz+fryoxh7+CIUhcNdbnZ6zqQzIxAskgORVo3ErOUmVKX/7qOn/q7g/peCVUsCQY9+5W66UKsswcW04FJoEikMqv3/k1PYzJ7H3xVXcsWmuAG0FSfXHyMn4UaEpkwcttSOH/vtCj8yhWyxR+3Q7eMm4pAWjNPpATxhmVOa1e2XsciZpEpxeA9fBC9WwbwauG5HktGboxe6nY2W5BTsFqtdWXGV41QIPk5jJHdw2AWhuEuL5hWxahnTEIvWhoOXkciERSLRei6jo4NdjqBmiJi5OJ7YRnt2iac3HNZubx65BH6tw/J1w5F4Pf7D6RSqROhUGguGg3DbtOwq68XbncP+nZ2I1/MYmFpBsGXE4og+GIC77/Oy9eStvY2BgKBcRrrHQqPeZk+8CTa+5cxNnQIAzv24d2XN5iZj+JjOndX+9frTBsWpHSBQqcoUDyMPVi69hviC4VQKCIpUgAAAABJRU5ErkJggg=="
+  },
+  {
+    "UserId": 5,
+    "CategoryId": 1,
+    "name": "Levothyroxine Sodium",
+    "description": "Cellulitis of buttock",
+    "stock": 25,
+    "price": 170916,
+    "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFhSURBVDjLpZMxbtZAEIW/N/bP7w4aSiQuQEODEFdIAVI6KFJwgeQenAEBFQVU1CBOkAsgroDSRMof77wUa68tK5GQstqVd1fz3rw345Vt7jN6gM8/zj9k6u3lIYer8ZaoTY5dD8OOj+9fPz/tAdJ6d/TqyeNhGCR1eMIkAMIGez6bMl7z/eefE6ASXF7lfr8f9OX3P0oxY2b9lmQspkznkibTnB0/paQEEACHESI6hKhTTa7mrepegsxNDWhyadAaLIQJCQssiAA3kxuCBpKRRMhkCBlCVW8a1p1rBPYCXjKKTrNRkOvCuougkkTULA4tHRQ4IVb1aQSeCJbMJlZgTdlTqsRwt4LqddUFJms2YWPfpsBugRFTRWffEkojs4CnH6sRaLoNQbImEWlXZV7L3xRx2OmCvH745sUj0Ozd89wMMY4H+k5uBA96ff326+/LQ/Gz/3mcfQe74FNt7T2f8w1Fi68/h3owMgAAAABJRU5ErkJggg=="
+  },
+  {
+    "UserId": 1,
+    "CategoryId": 2,
+    "name": "PRUNUS SPINOSA ECHINACEA PALLIDA PHOSPHORUS SILICON DIOXIDE IRON",
+    "description": "Low lying placenta NOS or without hemorrhage",
+    "stock": 1,
+    "price": 344205,
+    "imageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGdSURBVDjLpVMxa8JAFL6rAQUHXQoZpLU/oUOnDtKtW/MDBFHHThUKTgrqICgOEtd2EVxb2qFkKTgVChbSCnZTiVBEMBRLiEmafleCDaWxDX3w8e7dve+7l3cv1LZt8h/jvA56vV7DNM20YRgE/jyRSOR+ytvwEgAxvVwui/BF+LTvCtjNwKvj/X8CbgXPOHMEZl559HsTu93uPQi7jBiNRgMEx8PR0GIxRB+y2eze2gqQeAXoSCaqqu5bpsWIdyzGvvRrBW7rdDo2I6ZSKeq7B8x0XV/bwJWAJEnHSMwBDUEQWq5GfsJthUJhlVuv11uckyiGgiH2RWK73RYRb2cymbG7gnK5vIX9USwWI1yAI/KjLGK7teEI8HN1TizrnZWdRxxsNps8vI3YLpVKbB2EWB6XkMHzgAlvriYRSW+app1Mpy/jSCRSRSyDUON5nuJGytaAHI/vVPv9p/FischivL96gEP2bGxorhVFqYXDYQFCScwBYa9EKU1OlAkB+QLEU2AGaJ7PWKlUDiF2BBw4P9Mt/KUoije+5uAv9gGcjD6Kg4wu3AAAAABJRU5ErkJggg=="
+  }
+]
