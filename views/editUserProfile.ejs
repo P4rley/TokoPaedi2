@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <%- include(`partials/_navbar`) %>
+    <h1>User Profile</h1>
+
+    <form action="/users/profile/edit" method="post">
+      <div>
+        <label>Full Name</label><br />
+        <input type="text" name="fullName" value="<%= profile?.fullName %>" />
+      </div>
+      <div>
+        <label>No Handphone</label><br />
+        <input type="text" name="phone" value="<%= profile?.phone %>"/>
+      </div>
+      <div>
+        <label>Age</label><br />
+        <input type="number" name="age" value="<%= profile?.age %>"/>
+      </div>
+      <div>
+        <label for="">Gender</label><br />
+        <select name="gender" id="">
+          <option value="" selected disabled>---SELECT---</option>
+          <option value="male" <%= profile?.gender === "male" ? "selected" : ""%>>Male</option>
+          <option value="female" <%= profile?.gender === "female" ? "selected" : ""%>>Female</option>
+        </select>
+      </div>
+      <div>
+        <label>Image Url</label><br />
+        <textarea name="imageUrl" id="" cols="30" rows="10" ><%= profile?.imageUrl %></textarea>
+      </div>
+      <div>
+        <label>Birth Date</label><br />
+        <input type="date" name="birthDate" id="" value="<%= profile?.formattedBirthDate %>"/>
+      </div>
+
+      <br />
+
+      <input type="submit" value="Save" />
+    </form>
+    
+</body>
+</html>
+

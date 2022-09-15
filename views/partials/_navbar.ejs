@@ -1,0 +1,14 @@
+<nav style="text-align:center; background-color: green;">
+  <h1 style="background-color: green; color: white; display: inline; font-size: 50px;" >TOKOPAEDI</h1>
+  <br>
+  <% if (username) { %>
+  <a href="/" style="color: white; margin: 10px;">Home</a>
+  <a href="/users" style="color: white; margin: 10px;">Users</a>
+  <a href="/logout" style="color: white; margin: 10px;">Logout</a>
+  <% } else { %>
+  <a href="/" style="color: white; margin: 10px;">Home</a>
+  <a href="/users" style="color: white; margin: 10px;">Users</a>
+  <a href="/login" style="color: white; margin: 10px;">Login</a>
+  <a href="/register" style="color: white; margin: 10px;">Register</a>
+  <% } %>
+</nav>
