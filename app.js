@@ -3,9 +3,11 @@ const AuthController = require("./controllers/AuthController");
 const app = express();
 const session = require("express-session");
 const port = 3000;
+const router = require("./routes");
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
+app.use(router);
 
 app.use(
   session({
@@ -18,6 +20,7 @@ app.use(
 
 app.get("/", AuthController.home);
 app.get("/register", AuthController.register);
+
 app.post("/register", AuthController.postRegister);
 app.get("/login", AuthController.login);
 app.post("/login", AuthController.postLogin);
