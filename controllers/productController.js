@@ -1,7 +1,7 @@
 const { Category, Profile, Product, User } = require("../models");
 
 const { Op } = require("sequelize");
-
+const qr = require('qrcode')
 class Controller {
   static landingPage(req, res) {
     const username = req.session.username;
@@ -136,10 +136,17 @@ class Controller {
 
   static buyProduct(req, res) {
     const id = req.params.productId;
-    console.log(id);
+    const username = req.session.productId
     Product.decrement({ stock: 1 }, { where: { id } })
       .then(() => {
-        res.redirect(`/products/detail/${id}?buy=true`);
+        const url = `https://www.youtube.com/watch?v=sBe9G20R2TQ&t=228s`
+        qr.toDataURL(url, (err, src) => {
+          if (err) {
+            res.send(err)
+          } else {
+            res.render("scan", {src, username})
+          }
+        })
       })
       .catch((err) => {
         res.send(err);

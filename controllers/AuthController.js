@@ -14,11 +14,10 @@ class AuthController {
         res.redirect("/login");
       })
       .catch((err) => {
-        if (err.name === "SequelizeValidationError") {
+        if (err.name === "SequelizeValidationError" || err.name === "SequelizeUniqueConstraintError") {
           const errors = err.errors.map((el) => {
             return el.message;
           });
-
           res.redirect(`/register?error=${errors}`);
         } else {
           res.send(err);
@@ -47,6 +46,9 @@ class AuthController {
             const errors = "Username atau password yang kamu masukan salah";
             res.redirect(`/login?error=${errors}`);
           }
+        } else {
+          const errors = "Username atau password yang kamu masukan salah";
+          res.redirect(`/login?error=${errors}`);
         }
       })
       .catch((err) => {

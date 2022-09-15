@@ -7,6 +7,7 @@ const router = express.Router();
 router.use(AuthController.userPage);
 router.get("/add", Controller.addProduct);
 router.post("/add", Controller.createProduct);
+router.get("/buy/:productId", Controller.buyProduct);
 router.get("/edit/:productId", Controller.editProduct);
 router.post("/edit/:productId", Controller.saveProduct);
 router.get("/delete/:productId", Controller.deleteProduct);
