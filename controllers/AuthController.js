@@ -1,11 +1,6 @@
 const { User, Profile, Product } = require("../models");
 const bcrypt = require("bcryptjs");
 class AuthController {
-  static home(req, res) {
-    const username = req.session.username;
-    res.render("partials/_navbar", { username });
-  }
-
   static register(req, res) {
     const errors = req.query.error;
     res.render("register", { errors });
@@ -70,7 +65,7 @@ class AuthController {
   }
 
   static userPage(req, res, next) {
-    if (!req.session.userId || req.session.role === "buyer") {
+    if (!req.session.userId) {
       const errors = "Kamu tidak boleh masuk ke halaman ini";
       res.redirect(`/login?error=${errors}`);
     } else {
@@ -79,12 +74,13 @@ class AuthController {
   }
 
   static users(req, res) {
+    const username = req.session.username;
     const userId = req.session.userId;
     User.findByPk(+userId, {
       include: [Profile, Product],
     })
       .then((user) => {
-        res.render("userPage", { user });
+        res.render("userPage", { user, username });
       })
       .catch((err) => {
         res.send(err);
@@ -92,10 +88,11 @@ class AuthController {
   }
 
   static addUserProfile(req, res) {
+    const username = req.session.username;
     const userId = req.session.userId;
     Profile.findByPk(+userId)
       .then((profile) => {
-        res.render("addUserProfile", { profile });
+        res.render("addUserProfile", { profile, username });
       })
       .catch((err) => {
         res.send(err);
@@ -123,11 +120,12 @@ class AuthController {
   }
 
   static editUserProfile(req, res) {
+    const username = req.session.username;
     const userId = req.session.userId;
     console.log(userId);
     Profile.findOne({ where: { UserId: +userId } })
       .then((profile) => {
-        res.render("editUserProfile", { profile });
+        res.render("editUserProfile", { profile, username });
       })
       .catch((err) => {
         res.send(err);

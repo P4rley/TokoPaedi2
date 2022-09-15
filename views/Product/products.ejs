@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
 
-</head>
-
-<body>
-    <div style="margin: 50px auto; width: 60%;">
-        <button><a href="/products/add">Add Product</a></button>
-        <h1>List Product</h1>
-        <table class="table table-dark table-striped">
-            <thead>
-                <th>No.</th>
-                <th>Product Name</th>
-                <th>Stock</th>
-                <th>Seller</th>
-                <th>Action</th>
-            </thead>
-            <tbody>
-                <% products.forEach((el, i)=> { %>
-                    <tr>
-                        <td>
-                            <%=i + 1 %>
-                        </td>
-                        <td>
-                            <%= el.name %>
-                        </td>
-                        <td>
-                            <%=el.stock %>
-                        </td>
-                        <td>
-                            <%=el.stock %>
-                        </td>
-                        <td>
-                            <button>
-                                <a href="/products/detail/<%= el.id %>">Detail</a>
-                            </button>
-                        </td>
-                    </tr>
-                    <% }) %>
-            </tbody>
-        </table>
+  <body>
+    <div style="margin: 50px auto; width: 60%">
+      <button><a href="/products/add">Add Product</a></button>
+      <h1>List Product</h1>
+      <table class="table table-dark table-striped">
+        <thead>
+          <th>No.</th>
+          <th>Product Name</th>
+          <th>Stock</th>
+          <th>Seller</th>
+          <th>Action</th>
+        </thead>
+        <tbody>
+          <% products.forEach((el, i)=> { %>
+          <tr>
+            <td><%=i + 1 %></td>
+            <td><%= el.name %></td>
+            <td><%=el.stock %></td>
+            <td><%=el.stock %></td>
+            <td>
+              <button>
+                <a href="/products/detail/<%= el.id %>">Detail</a>
+              </button>
+            </td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
     </div>
-</body>
-
+  </body>
 </html>
